@@ -1,0 +1,10 @@
+/*
+Static file for Theme changes
+Theme name: My SPA Theme
+Version: 1.0
+Template: Howdy
+*/
+
+.LPMcontainer {
+    visibility: hidden;
+}

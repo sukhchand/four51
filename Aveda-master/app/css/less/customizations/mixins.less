@@ -1,0 +1,193 @@
+//
+// Custom mixins ** Bootstrap
+// --------------------------------------------------
+
+
+//== Colors
+
+//== Scaffolding
+
+//== Typography
+
+//== Components
+
+//== Tables
+
+//== Buttons
+
+//== Forms
+
+//== Dropdowns
+
+//== Media queries breakpoints
+//** phone < 618px
+@media (max-width: @screen-xs-max) {
+  // code
+}
+
+//** tablet portrait < 768px
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  // code
+}
+
+//** tablet landscape & desktop  < 1024p
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  // code
+}
+
+//** desktops > 1200px
+@media (min-width: @screen-lg-min){
+  // code
+}
+
+//== Grid system
+
+//== Container sizes
+
+//== Navbar
+.navbar-default{
+  background: rgb(206,204,194); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(206,204,194,1) 61%, rgba(153,153,153,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(61%,rgba(206,204,194,1)), color-stop(100%,rgba(153,153,153,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(206,204,194,1) 61%,rgba(153,153,153,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(206,204,194,1) 61%,rgba(153,153,153,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(206,204,194,1) 61%,rgba(153,153,153,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(206,204,194,1) 61%,rgba(153,153,153,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ceccc2', endColorstr='#999999',GradientType=0 ); /* IE6-9 */
+
+}
+//== Navs
+
+//== Pills
+
+//== Pagination
+
+//== Pager
+
+//== Jumbotron
+
+//== Form states and alerts
+
+//== Tooltips
+
+//== Popovers
+
+//== Labels
+
+//== Modals
+
+//== Alerts
+
+//== Progress bars
+
+//== List group
+
+//== Panels
+
+//== Thumbnails
+
+//== Wells
+
+//== Badges
+
+//== Breadcrumbs
+
+//== Carousel
+
+//== Close
+
+//== Code
+
+//== Type
+
+//== Miscellaneous
+.padded-toolbar{
+  background-color:@padded-toolbar-bg;
+  margin:15px 0 10px;
+  padding:5px 5px 5px 0;
+  .border-top-radius(@border-radius-large);
+  .border-bottom-radius(@border-radius-large);
+  border:1px solid darken(@padded-toolbar-bg, 5);
+  .btn-group{
+    width:auto;
+  }
+}
+
+
+.quick-add-searchbar {
+  margin-bottom:15px;
+  background-color:@panel-default-heading-bg;
+  border:1px solid @panel-default-border;
+  .border-top-radius(@border-radius-base);
+  .border-bottom-radius(@border-radius-base);
+  padding:10px;
+}
+
+.minicart-detail {
+  .border-top-radius(@border-radius-base);
+  .border-bottom-radius(@border-radius-base);
+  border:1px solid @panel-default-border;
+//  .box-shadow(0px 6px 12px 0px rgba(0,0,0,0.176));
+  padding:@grid-gutter-width;
+  background-color:#fff;
+  z-index:20;
+  .row{
+    &:not(.lineitem-row) {
+      &:not(.top-item){
+        border-top:1px dashed #ddd;
+      }
+      padding:10px 0;
+    }
+    &.lineitem-row {
+      @media (max-width: @screen-xs-max) {
+        font-size:0.8em;
+      }
+
+      i.fa-times {
+        font-size:1.3em;
+        cursor: pointer;
+      }
+    }
+  }
+  a {
+    display:block;
+  }
+  figure {
+    border:1px solid #ddd;
+    padding:5px;
+    img {
+      max-width:100%;
+    }
+  }
+}
+//
+// Custom mixins ** 451
+// --------------------------------------------------
+
+//== Angular
+
+//== Login
+
+//== Animations
+
+//== Categories
+
+//== Products
+
+//== Search
+
+//== Lineitem
+
+//== Orders
+
+//== Sidebar
+
+//== Notifications
+
+//== Utilities
+//** headroom
+//** loading indicator
+//** a more perfect table
+//** remove padding from columns
+
+//== Print

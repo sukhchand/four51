@@ -1,0 +1,38 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title panel-primary">
+            <i class="pull-left fa fa-history"></i>
+            {{'Quick Add' | r}}
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div>
+            <form name="quick_add_form" ng-submit="addToOrder()">
+                <div class="view-form-icon">
+                    <div>
+                        <input type="text" ng-model="LineItem.Product" placeholder="{{'Item Number' | r}}" typeahead="product as product.Name for product in getEligibleProducts($viewValue)"
+                               typeahead-loading="loadingQuickAddProduct" typeahead-wait-ms="500" class="form-control" required>
+                        <i class="fa fa-spin"></i>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-6 view-form-icon">
+                        <!--<input ng-disabled="!quickadd.Product" name="Quantity" class="form-control" type="text" required ng-model="quickadd.Quantity" placeholder="{{'Qty' | r}}" />-->
+                        <quantityfield ng-disabled="!LineItem.Product" required="true" lineitem="LineItem" class="quantity" />
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="btn btn-primary pull-right" type="submit" ng-disabled="quick_add_form.$invalid" value="{{'Add To Cart' | r}}" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="view-response-message alert-success text-center" style="padding-top:0; padding-bottom:0;" alert-show="currentOrder">
+                            <p style="margin-bottom: 0px;marign-top:5px;">{{quickAddMessage | r}}</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title panel-primary">
+            <i class="pull-left fa fa-microphone"></i>
+            {{'Announcements' | r}}
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div class="alert alert-archway" ng-repeat="alert in alerts">
+            <h5 ng-show="alert.Recent">New Important Information!</h5>
+            <span class="label label-info">{{alert.Date | date:'MMM d, y'}}</span>
+            <p>{{alert.Body}}</p>
+        </div>
+    </div>
+</div>

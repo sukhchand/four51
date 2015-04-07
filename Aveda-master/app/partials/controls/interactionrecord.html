@@ -1,0 +1,40 @@
+<section>
+    <form name="record">
+        <customselectionfield customfield="Variant.Specs.TransactionType"></customselectionfield>
+        <div class="row">
+            <div class="col-sm-6">
+                <customselectionfield customfield="Variant.Specs.Category"></customselectionfield>
+            </div>
+            <div class="col-sm-6">
+                <customselectionfield customfield="Variant.Specs.SubCategory"></customselectionfield>
+            </div>
+        </div>
+        <customtextfield customfield="Variant.Specs.PreviousTransaction"></customtextfield>
+        <customtextfield customfield="Variant.Specs.Description"></customtextfield>
+        <customtextfield customfield="Variant.Specs.EmployeeResponsible"></customtextfield>
+        <div class="row">
+            <div class="col-sm-6">
+                <customdatefield customfield="Variant.Specs.Date"></customdatefield>
+            </div>
+            <div class="col-sm-6">
+                <customtimefield customfield="Variant.Specs.Time"></customtimefield>
+            </div>
+        </div>
+        <customtextfield customfield="Variant.Specs.CallTag"></customtextfield>
+        <customtextfield customfield="Variant.Specs.Notes"></customtextfield>
+
+        <div class="btn-toolbar padded-toolbar" role="toolbar">
+            <div class="btn-group" style="width:auto;">
+                <button type="button" class="btn btn-danger" ng-click="cancelForm()">
+                    <i class="fa fa-times"></i> Cancel
+                </button>
+            </div>
+            <div class="btn-group pull-right" style="width:auto;">
+                <button type="button" class="btn btn-primary" ng-click="save(Variant.InteropID)" ng-disabled="record.$invalid">
+                    <i class="fa fa-check"></i> Save
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
+
